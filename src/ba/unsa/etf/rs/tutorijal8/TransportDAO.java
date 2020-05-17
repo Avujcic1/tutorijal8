@@ -25,14 +25,14 @@ public class TransportDAO {
                 brisanje = connection.prepareStatement("DELETE FROM BUSES WHERE Proizvodjac=? AND Serija=? AND BrojSjedista=?;");
                 driveri = connection.prepareStatement("SELECT * FROM DRIVERS;");
                 jmb = connection.prepareStatement("SELECT * FROM DRIVERS WHERE jmb=?;");
-            } catch (SQLException jedan) {
+            } catch (SQLException e) {
                 regenerateDatabase();
             } finally {
                 initializeDrivers();
                 initializeBuses();
             }
-        } catch (SQLException dva) {
-            dva.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -46,8 +46,8 @@ public class TransportDAO {
                         LocalDate.parse(resultSet.getString(5),formatter), LocalDate.parse(resultSet.getString(6),formatter) );
                 vozaci.add(driver);
             }
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -59,8 +59,8 @@ public class TransportDAO {
                 Bus bus = new Bus(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getInt(4));
                 busevi.add(bus);
             }
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -76,14 +76,14 @@ public class TransportDAO {
                         Statement stmt = connection.createStatement();
                         stmt.execute(upit);
                         upit = "";
-                    } catch (SQLException jedan) {
-                        jedan.printStackTrace();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
                     }
                 }
             }
             input.close();
-        } catch (FileNotFoundException dva) {
-            dva.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
@@ -104,15 +104,15 @@ public class TransportDAO {
                         Statement stmt = connection.createStatement();
                         stmt.execute(sqlUpit);
                         sqlUpit="";
-                    } catch (SQLException jedan) {
-                        jedan.printStackTrace();
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
                     }
 
                 }
             }
             ulaz.close();
-        } catch (FileNotFoundException dva) {
-            dva.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
     public static void removeInstance(){
@@ -123,8 +123,8 @@ public class TransportDAO {
     public void close(){
         try {
             connection.close();
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -134,8 +134,8 @@ public class TransportDAO {
             jmb.setString(1,driver.getJmb());
             ResultSet jm = jmb.executeQuery();
             if(jm.next()) throw new IllegalArgumentException("Taj vozač već postoji!");
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
         try {
@@ -146,8 +146,8 @@ public class TransportDAO {
             upit1.setString(5, String.valueOf(Date.valueOf(driver.getBirthday())));
             upit1.setString(6, String.valueOf(Date.valueOf(driver.getDatumZaposlenja())));
             upit1.executeUpdate();
-        } catch(SQLException jedan) {
-            jedan.printStackTrace();
+        } catch(SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -160,8 +160,8 @@ public class TransportDAO {
                         LocalDate.parse(rez.getString(6)));
                 lista.add(driver);
             }
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return lista;
     }
@@ -179,8 +179,8 @@ public class TransportDAO {
             statement1.setString(3, bus.getSeries());
             statement1.setInt(4, bus.getSeatNumber());
             statement1.executeUpdate();
-        } catch(SQLException jedan) {
-            jedan.printStackTrace();
+        } catch(SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -192,8 +192,8 @@ public class TransportDAO {
                 Bus bus = new Bus(rez.getInt(1), rez.getString(2), rez.getString(3), rez.getInt(4));
                 lista.add(bus);
             }
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return lista;
     }
@@ -205,8 +205,8 @@ public class TransportDAO {
             brisanje.setString(2, bus.getSeries());
             brisanje.setInt(3, bus.getSeatNumber());
             brisanje.executeUpdate();
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -215,8 +215,8 @@ public class TransportDAO {
             Statement statemaent = connection.createStatement();
             statemaent.executeUpdate("DELETE FROM DRIVERS WHERE jmb = '" + driver.getJmb() + "';");
             vozaci.remove(driver);
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -230,8 +230,8 @@ public class TransportDAO {
             } else if(which == 2) {
                 statemaent.executeUpdate("UPDATE BUSES SET vozac2 = '" + driver.getId() + "' WHERE id = '" + bus.getId() + "')");
             }
-        } catch (SQLException jedan) {
-            jedan.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

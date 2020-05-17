@@ -3,29 +3,29 @@ package ba.unsa.etf.rs.tutorijal8;
 import java.time.LocalDate;
 
 public class Driver {
-    private String ime, prezime, jmbg;
+    private String ime, prezime, jmb;
     private LocalDate datumRodjenja, datumZaposljenja;
-    private int ID;
+    private int id;
 
-    public Driver(String ime, String prezime, String jmbg, LocalDate datumRodjenja, LocalDate datumZaposljenja) {
+    public Driver(String ime, String prezime, String jmb, LocalDate datumRodjenja, LocalDate datumZaposljenja) {
         this.ime = ime;
         this.prezime = prezime;
-        this.jmbg = jmbg;
+        this.jmb = jmb;
         this.datumRodjenja = datumRodjenja;
         this.datumZaposljenja = datumZaposljenja;
     }
 
-    public Driver(int ID, String ime, String prezime, String jmbg, LocalDate datumRodjenja, LocalDate datumZaposljenja) {
+    public Driver(int id, String ime, String prezime, String jmb, LocalDate datumRodjenja, LocalDate datumZaposljenja) {
         this.ime = ime;
         this.prezime = prezime;
-        this.jmbg = jmbg;
+        this.jmb = jmb;
         this.datumRodjenja = datumRodjenja;
         this.datumZaposljenja = datumZaposljenja;
-        this.ID = ID;
+        this.id = id;
     }
 
     public int getId() {
-        return ID;
+        return id;
     }
 
     public String getIme() {
@@ -37,7 +37,7 @@ public class Driver {
     }
 
     public String getJmb() {
-        return jmbg;
+        return jmb;
     }
 
     public String getName() {

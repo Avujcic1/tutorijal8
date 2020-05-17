@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421d7fb7-fab3-48c2-b140-ac993b300cb0" name="Default Changelist" comment="" />
+    <list default="true" id="421d7fb7-fab3-48c2-b140-ac993b300cb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baza.db" beforeDir="false" afterPath="$PROJECT_DIR$/baza.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tutorijal_8/ba/unsa/etf/rs/tutorijal8/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tutorijal_8/ba/unsa/etf/rs/tutorijal8/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tutorijal_8/ba/unsa/etf/rs/tutorijal8/TransportDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tutorijal_8/ba/unsa/etf/rs/tutorijal8/TransportDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripta.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +170,7 @@
       <workItem from="1557517066080" duration="1612000" />
       <workItem from="1557652197101" duration="1267000" />
       <workItem from="1589530024987" duration="748000" />
-      <workItem from="1589692804197" duration="5166000" />
+      <workItem from="1589692804197" duration="5512000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1557517574894</created>
@@ -183,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589697733916</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1589698067446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589698067446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,30 +237,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="256" key="#scripta.sql/0.0.1920.1040@0.0.1920.1040" timestamp="1589696488027" />
-    <state x="581" y="88" key="CommitChangelistDialog2" timestamp="1589697733158">
+    <state x="581" y="88" key="CommitChangelistDialog2" timestamp="1589698066861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="581" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589697733158" />
+    <state x="581" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589698066861" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1589694544307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589694544307" />
-    <state width="1877" height="254" key="GridCell.Tab.0.bottom" timestamp="1589697718135">
+    <state width="1877" height="246" key="GridCell.Tab.0.bottom" timestamp="1589698215516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589697718135" />
-    <state width="1877" height="254" key="GridCell.Tab.0.center" timestamp="1589697718135">
+    <state width="1877" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589698215516" />
+    <state width="1877" height="246" key="GridCell.Tab.0.center" timestamp="1589698215516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589697718135" />
-    <state width="1877" height="254" key="GridCell.Tab.0.left" timestamp="1589697718135">
+    <state width="1877" height="246" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589698215516" />
+    <state width="1877" height="246" key="GridCell.Tab.0.left" timestamp="1589698215516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589697718135" />
-    <state width="1877" height="254" key="GridCell.Tab.0.right" timestamp="1589697718135">
+    <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589698215516" />
+    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1589698215516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589697718135" />
+    <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589698215516" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589694197917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -264,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589696542091" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589697915062">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589698094462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589697915062" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589698094462" />
     <state x="0" y="446" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589696287068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
